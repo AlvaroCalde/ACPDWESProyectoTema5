@@ -76,7 +76,7 @@
     </main>
     <footer>
         <div>
-            <a href="https://github.com/AlvaroCalde/ACPDWESProyectoTema5" target="blank"><img src="/webroot/images/github.png" alt="enlace a github"></a>
+            <a href="https://github.com/AlvaroCalde/ACPDWESProyectoTema5" target="blank"><img src="/webroot/images/github.png" alt="github"></a>
             <a href="/">Álvaro Calderón Pérez</a>
         </div>
     </footer>
