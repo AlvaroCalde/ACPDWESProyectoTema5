@@ -22,19 +22,19 @@
                     </tr>
                     <tr>
                         <td>Script Creación</td>
-                        <td><a href="./mostrarCodigo/muestraScriptCrear.php" class="btn btn-codigo">Codigo</a></td>
+                        <td><a href="./mostrarcodigo/muestraScriptCrear.php" class="btn btn-codigo">Codigo</a></td>
                     </tr>
                     <tr>
                         <td>Script Carga Inicial</td>
-                        <td><a href="./mostrarCodigo/muestraScriptCarga.php" class="btn btn-codigo">Codigo</a></td>
+                        <td><a href="./mostrarcodigo/muestraScriptCarga.php" class="btn btn-codigo">Codigo</a></td>
                     </tr>
                     <tr>
                         <td>Script Delete</td>
-                        <td><a href="./mostrarCodigo/muestraScriptDelete.php" class="btn btn-codigo">Codigo</a></td>
+                        <td><a href="./mostrarcodigo/muestraScriptDelete.php" class="btn btn-codigo">Codigo</a></td>
                     </tr>
                     <tr>
                         <td>ConfigDBPDO</td>
-                        <td><a href="./mostrarCodigo/muestraconfigDBPDO.php" class="btn btn-codigo">Codigo</a></td>
+                        <td><a href="./mostrarcodigo/muestraconfigDBPDO.php" class="btn btn-codigo">Codigo</a></td>
                     </tr>
                 </tbody>
             </table>
@@ -50,20 +50,23 @@
                     </tr>
                     <tr>
                         <td>0</td>
-                        <td>Conexión a la base de datos con la cuenta usuario y tratamiento de errores.</td>
+                        <td>Mostrar el contenido de las variables superglobales y phpinfo()</td>
                         <td><a href="" class="btn btn-ejecutar">Ejecutar</a></td>
                         <td><a href="" class="btn btn-codigo">Codigo</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
-                        <td>Mostrar el contenido de la tabla Departamento y el número de registros</td>
+                        <td>Desarrollo de un control de acceso con identificación del usuario basado en la función header()</td>
                         <td><a href="" class="btn btn-ejecutar">Ejecutar</a></td>
                         <td><a href="" class="btn btn-codigo">Codigo</a></td>
 
                     </tr>
                     <tr>
                         <td>2</td>
-                        <td>Formulario para añadir un departamento a la tabla Departamento con validación de entrada y control de errores.</td>
+                        <td>
+                            Desarrollo de un control de acceso con identificación del usuario basado en la función header() y
+                            en el uso de una tabla “Usuario” de la base de datos. (PDO)
+                        </td>
                         <td><a href="" class="btn btn-ejecutar">Ejecutar</a></td>
                         <td><a href="" class="btn btn-codigo">Codigo</a></td>
                     </tr>               
