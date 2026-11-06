@@ -45,20 +45,20 @@
                     <tr class="titulo">
                         <td>Nº</td>
                         <td>Enunciado</td>
-                        <td>Ejecutar PDO</td>
-                        <td>Código PDO</td>
+                        <td>Ejecutar</td>
+                        <td>Código</td>
                     </tr>
                     <tr>
                         <td>0</td>
                         <td>Mostrar el contenido de las variables superglobales y phpinfo()</td>
-                        <td><a href="" class="btn btn-ejecutar">Ejecutar</a></td>
-                        <td><a href="" class="btn btn-codigo">Codigo</a></td>
+                        <td><a href="./codigoPHP/ejercicio00.php" class="btn btn-ejecutar">Ejecutar</a></td>
+                        <td><a href="./mostrarcodigo/muestraEjercicio00.php" class="btn btn-codigo">Codigo</a></td>
                     </tr>
                     <tr>
                         <td>1</td>
                         <td>Desarrollo de un control de acceso con identificación del usuario basado en la función header()</td>
-                        <td><a href="" class="btn btn-ejecutar">Ejecutar</a></td>
-                        <td><a href="" class="btn btn-codigo">Codigo</a></td>
+                        <td><a href="./codigoPHP/ejercicio01.php" class="btn btn-ejecutar">Ejecutar</a></td>
+                        <td><a href="./mostrarcodigo/muestraEjercicio01.php" class="btn btn-codigo">Codigo</a></td>
 
                     </tr>
                     <tr>
