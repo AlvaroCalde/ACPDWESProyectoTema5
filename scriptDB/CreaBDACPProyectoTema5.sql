@@ -12,16 +12,16 @@ CREATE TABLE IF NOT EXISTS T02_Departamento (
     PRIMARY KEY (T02_CodDepartamento)
 );
 
-CREATE TABLE T01_Usuario (
-    T01_CodUsuario VARCHAR(50) NOT NULL,
+CREATE TABLE IF NOT EXISTS T01_Usuario (
+    T01_CodUsuario VARCHAR(8) NOT NULL PRIMARY KEY,
     T01_Password VARCHAR(255) NOT NULL,
-    T01_DescUsuario VARCHAR(255),
-    T01_NumConexiones INT DEFAULT 0,
-    T01_FechaHoraUltimaConexion DATETIME,
-    T01_Perfil VARCHAR(50),
-    T01_ImagenUsuario VARCHAR(255),
-    PRIMARY KEY (T01_CodUsuario)
-) ENGINE=InnoDB;
+    T01_DescUsuario VARCHAR(255) NOT NULL,
+    T01_NumConexiones INT UNSIGNED NOT NULL DEFAULT 0,
+    T01_FechaHoraUltimaConexion DATETIME  DEFAULT NULL,
+    T01_Perfil ENUM('usuario', 'administrador') NOT NULL DEFAULT 'usuario',
+    T01_ImagenUsuario LONGBLOB NULL,
+    CHECK (CHAR_LENGTH(T01_CodUsuario) BETWEEN 4 AND 8)
+);
 
 CREATE USER 'userACPDWESProyectoTema5'@'%' IDENTIFIED BY 'paso';
 GRANT ALL ON DBACPDWESProyectoTema5.* to 'userACPDWESProyectoTema5'@'%';
