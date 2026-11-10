@@ -14,12 +14,27 @@
     try{
         $usuarioPassword = $_SERVER['PHP_AUTH_USER'].$_SERVER['PHP_AUTH_PW'];
 
-            // Conectamos a la base de datos
-            $miDB = new PDO(DSN,USERNAME,PASSWORD);
+        // Conectamos a la base de datos
+        $miDB = new PDO(DSN,USERNAME,PASSWORD);
+        
+        $sql = "SELECT * FROM T01_Usuario WHERE T01_CodUsuario = :usuario AND T01_Password = sha2(:contras, 256)";
+        $consulta = $miDB->prepare($sql);
+        
+        $consulta->execute([
+            ':usuario' => $_SERVER['PHP_AUTH_USER'],
+            ':contras' => $usuarioPassword
+        ]);
+        
+        // Si encuentra una fila, las credenciales son correctas
+        if ($consulta->rowCount() == 1) {
+            $usuarioValido = true;
+        }
+        
     }catch(PDOException $miExceptionPDO){
-
+        // temporalmente ponemos estos errores para que se muestren en pantalla
+        echo 'Error: ' . $miExceptionPDO->getMessage() . ' con código de error: ' . $miExceptionPDO->getCode();
     } finally {
-
+        unset($miDB);
     }
     if (!$usuarioValido) {
         header('WWW-Authenticate: Basic realm="Contenido restringido"');
@@ -85,7 +100,7 @@
     </nav>
     <main class="ejercicio">
         <h2>Acceso permitido</h2>
-        <p>Bienvenido, <?php echo $codigoUsuario; ?>.</p>
+        <p>Bienvenido, <?php echo $_SERVER['PHP_AUTH_USER']; ?>.</p>
         <br>
     </main>
     <footer>

@@ -67,8 +67,8 @@
                             Desarrollo de un control de acceso con identificación del usuario basado en la función header() y
                             en el uso de una tabla “Usuario” de la base de datos. (PDO)
                         </td>
-                        <td><a href="" class="btn btn-ejecutar">Ejecutar</a></td>
-                        <td><a href="" class="btn btn-codigo">Codigo</a></td>
+                        <td><a href="./codigoPHP/ejercicio02.php" class="btn btn-ejecutar">Ejecutar</a></td>
+                        <td><a href="./mostrarcodigo/muestraEjercicio02.php" class="btn btn-codigo">Codigo</a></td>
                     </tr>               
                 </tbody>
             </table>
